@@ -1,0 +1,87 @@
+/**
+*
+* COMMON
+* Peduarte.com
+* @author Pedro Duarte
+*
+**/
+
+body {
+	font-family: $font;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	background: $color-secondary;
+	color: $color-primary;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+
+
+	@include media-query(mobile) {
+		font-size: 12px;
+	}
+}
+
+hgroup {
+	display: inline-block;
+}
+
+h1, h2, h3, strong {
+	font-weight: $bold;
+}
+
+h1 {
+	font-family: $font-heading;
+	font-size: em(80px);
+	font-weight: 800;
+	font-style: italic;
+	line-height: em(80px, 80px);
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: em(18px);
+	line-height: em(20px, 18px);
+	margin: 0 0 em(50px);
+
+}
+
+h3 {
+	font-family: $font-heading;
+	font-weight: 800;
+	font-style: italic;
+	text-transform: uppercase;
+	color: $color-highlight;
+	margin-bottom: em(16px);
+}
+
+a {
+	color: $color-highlight;
+	text-decoration: none;
+
+	li & {
+		color: $color-primary;
+	}
+}
+
+ul {
+	margin-bottom: em(50px);
+}
+
+li {
+	font-size: em(38px);
+	line-height: em(60px, 38px);
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+.container {
+	margin: 7%;
+}
+
+.rga {
+	color: $color-rga;
+}
+
+.twitter {
+	color: $color-twitter;
+}
