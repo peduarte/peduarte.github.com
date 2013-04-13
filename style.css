@@ -1,0 +1,194 @@
+/**
+*
+* STYLE
+* Peduarte.com
+* @author Pedro Duarte
+*
+**/
+/**
+*
+* UTILS
+* Peduarte.com
+* @author Pedro Duarte
+*
+**/
+/*=================================
+=            VARIABLES            =
+=================================*/
+/*-----  Responsive  ------*/
+/*=================================
+=            FUNCTIONS            =
+=================================*/
+/*==============================
+=            MIXINS            =
+==============================*/
+/**************************************************
+	RESET
+**************************************************/
+/* line 12, sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+/* line 23, sass/_reset.scss */
+:focus {
+  /* remember to define focus styles! */
+  outline: 0; }
+
+/* line 26, sass/_reset.scss */
+body {
+  background: #fff;
+  line-height: 1; }
+
+/* line 30, sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 33, sass/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0; }
+
+/* line 37, sass/_reset.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+/* line 42, sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+/* line 45, sass/_reset.scss */
+blockquote, q {
+  quotes: "" ""; }
+
+/* line 48, sass/_reset.scss */
+a img {
+  border: 0; }
+
+/* line 52, sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Clearfix */
+/* line 57, sass/_reset.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 66, sass/_reset.scss */
+.clearfix {
+  display: inline-block; }
+
+/* line 70, sass/_reset.scss */
+html[xmlns] .clearfix {
+  display: block; }
+
+/* line 74, sass/_reset.scss */
+* html .clearfix {
+  height: 1%; }
+
+/**
+*
+* COMMON
+* Peduarte.com
+* @author Pedro Duarte
+*
+**/
+/* line 9, sass/_common.scss */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: white;
+  color: #323232;
+  text-align: left;
+  -webkit-font-smoothing: antialiased; }
+  @media only screen and (max-width: 721px) {
+    /* line 9, sass/_common.scss */
+    body {
+      font-size: 12px; } }
+
+/* line 24, sass/_common.scss */
+hgroup {
+  display: inline-block; }
+
+/* line 28, sass/_common.scss */
+h1, h2, h3, strong {
+  font-weight: 700; }
+
+/* line 32, sass/_common.scss */
+h1 {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 5em;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1em;
+  text-transform: uppercase; }
+
+/* line 41, sass/_common.scss */
+h2 {
+  font-size: 1.125em;
+  line-height: 1.11111em;
+  margin: 0 0 3.125em; }
+
+/* line 48, sass/_common.scss */
+h3 {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #f85959;
+  margin-bottom: 1em; }
+
+/* line 57, sass/_common.scss */
+a {
+  color: #f85959;
+  text-decoration: none; }
+  /* line 61, sass/_common.scss */
+  li a {
+    color: #323232; }
+
+/* line 66, sass/_common.scss */
+ul {
+  margin-bottom: 3.125em; }
+
+/* line 70, sass/_common.scss */
+li {
+  font-size: 2.375em;
+  line-height: 1.57895em;
+  font-weight: 700;
+  letter-spacing: -2px; }
+
+/* line 77, sass/_common.scss */
+.container {
+  margin: 7%; }
+
+/* line 81, sass/_common.scss */
+.rga {
+  color: #e5193c; }
+
+/* line 85, sass/_common.scss */
+.twitter {
+  color: #33ccff; }
