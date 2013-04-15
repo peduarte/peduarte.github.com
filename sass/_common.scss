@@ -62,20 +62,13 @@ h2 {
 
 }
 
-h3 {
-	font-family: $font;
-	font-style: italic;
-	text-transform: uppercase;
-	color: $color-highlight;
-	margin-bottom: em(16px);
-}
-
 a {
-	color: $color-highlight;
+	color: $color-primary;
 	text-decoration: none;
+	@include prefixr(transition, all 800ms $ease-out-expo);
 
-	li & {
-		color: $color-primary;
+	&:hover {
+		color: darken($color-primary, 15%);
 	}
 }
 
@@ -88,17 +81,45 @@ li {
 	letter-spacing: -2px;
 	text-transform: uppercase;
 	border-bottom: 1px solid darken($color-background, 4%);
+	letter-spacing: 5px;
+	font-weight: 100;
+	line-height: em(50px, 60px);
+
+	&.no-link {
+		padding: em(15px) 0 em(15px) $bleed;
+		position: relative;
+		overflow: hidden;
+
+		span {
+			font-size: em(28px, 60px);
+			line-height: em(132px, 28px);
+			background: $color-primary;
+			color: $color-background;
+			padding-left: $bleed;
+			letter-spacing: 1px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			bottom: 0;
+			opacity: 0;
+
+			@include prefixr(transition, all 600ms $ease-out-expo);
+			@include prefixr(transform, translate3d(0, em(-200px), 0));
+		}
+
+		&:hover span {
+			opacity: 1;
+			@include prefixr(transform, translate3d(0, 0, 0));
+		}
+	}
 
 	& a {
-		line-height: em(50px, 60px);
 		padding: em(15px) 0 em(15px) $bleed;
 		display: block;
-		letter-spacing: 5px;
-		font-weight: 100;
-
-		@include prefixr(transition, all 800ms $ease-out-expo);
 
 		&:hover {
+			color: $color-primary;
 			background-color: darken($color-background, 4%);
 		}
 
@@ -121,8 +142,16 @@ li {
 
 .rga {
 	color: $color-rga;
+
+	&:hover {
+		color: darken($color-rga, 15%);
+	}
 }
 
 .twitter {
 	color: $color-twitter;
+
+	&:hover {
+		color: darken($color-twitter, 15%);
+	}
 }
