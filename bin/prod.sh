@@ -1,1 +1,1 @@
-sass --style compressed --update sass:.
+sass --style compressed --update sass/style.scss:./style.css
