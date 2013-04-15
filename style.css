@@ -117,78 +117,124 @@ html[xmlns] .clearfix {
 *
 **/
 /* line 9, sass/_common.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, sass/_common.scss */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background: white;
-  color: #323232;
+  font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  background: #e6e3db;
+  color: #463f39;
   text-align: left;
   -webkit-font-smoothing: antialiased; }
   @media only screen and (max-width: 721px) {
-    /* line 9, sass/_common.scss */
+    /* line 13, sass/_common.scss */
     body {
-      font-size: 12px; } }
+      font-size: 12px;
+      text-align: center; } }
 
-/* line 24, sass/_common.scss */
+/* line 29, sass/_common.scss */
 hgroup {
-  display: inline-block; }
-
-/* line 28, sass/_common.scss */
-h1, h2, h3, strong {
-  font-weight: 700; }
-
-/* line 32, sass/_common.scss */
-h1 {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 5em;
-  font-weight: 800;
-  font-style: italic;
-  line-height: 1em;
-  text-transform: uppercase; }
+  display: inline-block;
+  background: #1c1917;
+  padding: 7% 0 7% 7%;
+  width: 100%; }
+  @media only screen and (max-width: 721px) {
+    /* line 29, sass/_common.scss */
+    hgroup {
+      padding-left: 1%;
+      padding-right: 1%; } }
 
 /* line 41, sass/_common.scss */
-h2 {
-  font-size: 1.125em;
-  line-height: 1.11111em;
-  margin: 0 0 3.125em; }
+h2, h3, strong {
+  font-weight: normal; }
 
-/* line 48, sass/_common.scss */
+/* line 45, sass/_common.scss */
+h1 {
+  font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
+  font-size: 4.54545em;
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: #dedacf; }
+
+/* line 55, sass/_common.scss */
+h2 {
+  font-size: 1.27273em;
+  line-height: 1.11111em; }
+  @media only screen and (max-width: 721px) {
+    /* line 55, sass/_common.scss */
+    h2 {
+      font-size: 1.83333em; } }
+
+/* line 65, sass/_common.scss */
 h3 {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 800;
+  font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
   font-style: italic;
   text-transform: uppercase;
   color: #f85959;
-  margin-bottom: 1em; }
+  margin-bottom: 0.72727em; }
 
-/* line 57, sass/_common.scss */
+/* line 73, sass/_common.scss */
 a {
   color: #f85959;
   text-decoration: none; }
-  /* line 61, sass/_common.scss */
+  /* line 77, sass/_common.scss */
   li a {
-    color: #323232; }
+    color: #463f39; }
 
-/* line 66, sass/_common.scss */
+/* line 82, sass/_common.scss */
 ul {
-  margin-bottom: 3.125em; }
+  margin-bottom: 2.27273em; }
 
-/* line 70, sass/_common.scss */
+/* line 86, sass/_common.scss */
 li {
-  font-size: 2.375em;
-  line-height: 1.57895em;
-  font-weight: 700;
-  letter-spacing: -2px; }
+  font-size: 2.72727em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dedacf; }
+  /* line 92, sass/_common.scss */
+  li a {
+    line-height: 0.83333em;
+    padding: 0.68182em 0 0.68182em 7%;
+    display: block;
+    letter-spacing: 5px;
+    font-weight: 100;
+    -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1); }
+    /* line 101, sass/_common.scss */
+    li a:hover {
+      background-color: #dedacf; }
+    @media only screen and (max-width: 721px) {
+      /* line 92, sass/_common.scss */
+      li a {
+        padding-left: 1%;
+        padding-right: 1%; } }
 
-/* line 77, sass/_common.scss */
-.container {
-  margin: 7%; }
+/* line 112, sass/_common.scss */
+.contact {
+  padding: 0 0 2.27273em 7%; }
+  @media only screen and (max-width: 721px) {
+    /* line 112, sass/_common.scss */
+    .contact {
+      padding-left: 1%;
+      padding-right: 1%;
+      font-size: 1.66667em; } }
 
-/* line 81, sass/_common.scss */
+/* line 122, sass/_common.scss */
 .rga {
   color: #e5193c; }
 
-/* line 85, sass/_common.scss */
+/* line 126, sass/_common.scss */
 .twitter {
   color: #33ccff; }

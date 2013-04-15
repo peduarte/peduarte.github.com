@@ -10,21 +10,22 @@
 =            VARIABLES            =
 =================================*/
 
-	$font: 'Helvetica Neue', Arial, sans-serif;
-	$font-heading: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-	$base-font-size: 16px!default;
-	$base-line-height: 24px!default;
+	$font: 'futura-pt', 'Helvetica Neue', Arial, sans-serif;
+	$base-font-size: 22px!default;
+	$base-line-height: 32px!default;
 	$bold: 700;
 
-	$color-primary: #323232;
+	$color-background: #E6E3DB;
+	$color-primary: #463F39;
 	$color-secondary: #ffffff;
-
-
-
 	$color-highlight: #F85959;
-
 	$color-rga: #e5193c;
 	$color-twitter: #3CF;
+
+	$bleed: 7%;
+	$bleedSmall: 1%;
+
+	$ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 	/*-----  Responsive  ------*/
     $lap-start: 721px!default;

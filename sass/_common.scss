@@ -6,11 +6,15 @@
 *
 **/
 
+* {
+	@include prefixr(box-sizing, border-box);
+}
+
 body {
 	font-family: $font;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
-	background: $color-secondary;
+	background: $color-background;
 	color: $color-primary;
 	text-align: left;
 	-webkit-font-smoothing: antialiased;
@@ -18,36 +22,48 @@ body {
 
 	@include media-query(mobile) {
 		font-size: 12px;
+		text-align: center;
 	}
 }
 
 hgroup {
 	display: inline-block;
+	background: darken($color-primary, 15%);
+	padding: $bleed 0 $bleed $bleed;
+	width: 100%;
+
+	@include media-query(mobile) {
+		padding-left: $bleedSmall;
+		padding-right: $bleedSmall;
+	}
 }
 
-h1, h2, h3, strong {
-	font-weight: $bold;
+h2, h3, strong {
+	font-weight: normal;
 }
 
 h1 {
-	font-family: $font-heading;
-	font-size: em(80px);
-	font-weight: 800;
-	font-style: italic;
-	line-height: em(80px, 80px);
+	font-family: $font;
+	font-size: em(100px);
+	font-weight: bold;
+	line-height: em(100px, 100px);
+	letter-spacing: -2px;
 	text-transform: uppercase;
+	color: darken($color-background, 4%);
 }
 
 h2 {
-	font-size: em(18px);
+	font-size: em(28px);
 	line-height: em(20px, 18px);
-	margin: 0 0 em(50px);
+
+	@include media-query(mobile) {
+		font-size: em(22px, 12px);
+	}
 
 }
 
 h3 {
-	font-family: $font-heading;
-	font-weight: 800;
+	font-family: $font;
 	font-style: italic;
 	text-transform: uppercase;
 	color: $color-highlight;
@@ -68,14 +84,39 @@ ul {
 }
 
 li {
-	font-size: em(38px);
-	line-height: em(60px, 38px);
-	font-weight: 700;
+	font-size: em(60px);
 	letter-spacing: -2px;
+	text-transform: uppercase;
+	border-bottom: 1px solid darken($color-background, 4%);
+
+	& a {
+		line-height: em(50px, 60px);
+		padding: em(15px) 0 em(15px) $bleed;
+		display: block;
+		letter-spacing: 5px;
+		font-weight: 100;
+
+		@include prefixr(transition, all 800ms $ease-out-expo);
+
+		&:hover {
+			background-color: darken($color-background, 4%);
+		}
+
+		@include media-query(mobile) {
+			padding-left: $bleedSmall;
+			padding-right: $bleedSmall;
+		}
+	}
 }
 
-.container {
-	margin: 7%;
+.contact {
+	padding: 0 0 em(50px) $bleed;
+
+	@include media-query(mobile) {
+		padding-left: $bleedSmall;
+		padding-right: $bleedSmall;
+		font-size: em(20px, 12px);
+	}
 }
 
 .rga {
