@@ -168,12 +168,12 @@ h1 {
 /* line 55, sass/_common.scss */
 h2 {
   font-size: 1.27273em;
-  line-height: 1.11111em; }
+  line-height: 1.11111em;
+  color: #8c7e72; }
   @media only screen and (max-width: 620px) {
     /* line 55, sass/_common.scss */
     h2 {
-      font-size: 1.83333em;
-      color: #8c7e72; } }
+      font-size: 1.83333em; } }
 
 /* line 66, sass/_common.scss */
 a {
