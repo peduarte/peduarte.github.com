@@ -172,9 +172,10 @@ h2 {
   @media only screen and (max-width: 620px) {
     /* line 55, sass/_common.scss */
     h2 {
-      font-size: 1.83333em; } }
+      font-size: 1.83333em;
+      color: #8c7e72; } }
 
-/* line 65, sass/_common.scss */
+/* line 66, sass/_common.scss */
 a {
   color: #463f39;
   text-decoration: none;
@@ -183,15 +184,15 @@ a {
   -ms-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1); }
-  /* line 70, sass/_common.scss */
+  /* line 71, sass/_common.scss */
   a:hover {
     color: #1c1917; }
 
-/* line 75, sass/_common.scss */
+/* line 76, sass/_common.scss */
 ul {
   margin-bottom: 2.27273em; }
 
-/* line 79, sass/_common.scss */
+/* line 80, sass/_common.scss */
 li {
   font-size: 2.72727em;
   letter-spacing: -2px;
@@ -200,12 +201,12 @@ li {
   letter-spacing: 5px;
   font-weight: 100;
   line-height: 0.83333em; }
-  /* line 88, sass/_common.scss */
+  /* line 89, sass/_common.scss */
   li.no-link {
     padding: 0.68182em 0 0.68182em 7%;
     position: relative;
     overflow: hidden; }
-    /* line 93, sass/_common.scss */
+    /* line 94, sass/_common.scss */
     li.no-link span {
       font-size: 0.46667em;
       line-height: 4.71429em;
@@ -230,10 +231,23 @@ li {
       -o-transform: translate3d(0, -3.63636em, 0);
       transform: translate3d(0, -3.63636em, 0); }
       @media only screen and (max-width: 620px) {
-        /* line 93, sass/_common.scss */
+        /* line 94, sass/_common.scss */
         li.no-link span {
-          padding-left: 0; } }
-    /* line 115, sass/_common.scss */
+          padding-left: 0;
+          position: static;
+          color: #a3988e;
+          font-size: 0.42857em;
+          line-height: 0.71429em;
+          opacity: 1;
+          display: block;
+          background: none;
+          padding-top: 0.90909em;
+          -webkit-transform: translate3d(0, 0, 0);
+          -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+          -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); } }
+    /* line 125, sass/_common.scss */
     li.no-link:hover span {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
@@ -247,43 +261,43 @@ li {
       -o-transition-delay: 200ms;
       transition-delay: 200ms; }
     @media only screen and (max-width: 620px) {
-      /* line 88, sass/_common.scss */
+      /* line 89, sass/_common.scss */
       li.no-link {
         padding-left: 0; } }
-  /* line 126, sass/_common.scss */
+  /* line 136, sass/_common.scss */
   li a {
     padding: 0.68182em 0 0.68182em 7%;
     display: block; }
-    /* line 130, sass/_common.scss */
+    /* line 140, sass/_common.scss */
     li a:hover {
       color: #463f39;
       background-color: #dedacf; }
     @media only screen and (max-width: 620px) {
-      /* line 126, sass/_common.scss */
+      /* line 136, sass/_common.scss */
       li a {
         padding-left: 0%;
         padding-right: 0%; } }
 
-/* line 142, sass/_common.scss */
+/* line 152, sass/_common.scss */
 .contact {
   padding: 0 0 2.27273em 7%; }
   @media only screen and (max-width: 620px) {
-    /* line 142, sass/_common.scss */
+    /* line 152, sass/_common.scss */
     .contact {
       padding-left: 0%;
       padding-right: 0%;
       font-size: 1.66667em; } }
 
-/* line 152, sass/_common.scss */
+/* line 162, sass/_common.scss */
 .rga {
   color: #e5193c; }
-  /* line 155, sass/_common.scss */
+  /* line 165, sass/_common.scss */
   .rga:hover {
     color: #a0112a; }
 
-/* line 160, sass/_common.scss */
+/* line 170, sass/_common.scss */
 .twitter {
   color: #33ccff; }
-  /* line 163, sass/_common.scss */
+  /* line 173, sass/_common.scss */
   .twitter:hover {
     color: #00ace6; }
