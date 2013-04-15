@@ -136,7 +136,7 @@ body {
   @media only screen and (max-width: 620px) {
     /* line 13, sass/_common.scss */
     body {
-      font-size: 12px;
+      font-size: 10px;
       text-align: center; } }
 
 /* line 29, sass/_common.scss */
@@ -148,8 +148,8 @@ hgroup {
   @media only screen and (max-width: 620px) {
     /* line 29, sass/_common.scss */
     hgroup {
-      padding-left: 1%;
-      padding-right: 1%; } }
+      padding-left: 0%;
+      padding-right: 0%; } }
 
 /* line 41, sass/_common.scss */
 h2, h3, strong {
@@ -261,8 +261,8 @@ li {
     @media only screen and (max-width: 620px) {
       /* line 126, sass/_common.scss */
       li a {
-        padding-left: 1%;
-        padding-right: 1%; } }
+        padding-left: 0%;
+        padding-right: 0%; } }
 
 /* line 142, sass/_common.scss */
 .contact {
@@ -270,8 +270,8 @@ li {
   @media only screen and (max-width: 620px) {
     /* line 142, sass/_common.scss */
     .contact {
-      padding-left: 1%;
-      padding-right: 1%;
+      padding-left: 0%;
+      padding-right: 0%;
       font-size: 1.66667em; } }
 
 /* line 152, sass/_common.scss */
