@@ -105,12 +105,20 @@ li {
 			opacity: 0;
 
 			@include prefixr(transition, all 600ms $ease-out-expo);
-			@include prefixr(transform, translate3d(0, em(-200px), 0));
+			@include prefixr(transform, translate3d(0, em(-80px), 0));
+
+			@include media-query(mobile) {
+				padding-left: 0;
+			}
 		}
 
 		&:hover span {
 			opacity: 1;
 			@include prefixr(transform, translate3d(0, 0, 0));
+		}
+
+		@include media-query(mobile) {
+			padding-left: 0;
 		}
 	}
 
