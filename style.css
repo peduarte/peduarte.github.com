@@ -219,11 +219,11 @@ li {
       width: 100%;
       bottom: 0;
       opacity: 0;
-      -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-      -moz-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-      -ms-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-      -o-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+      -webkit-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
       -webkit-transform: translate3d(0, -3.63636em, 0);
       -moz-transform: translate3d(0, -3.63636em, 0);
       -ms-transform: translate3d(0, -3.63636em, 0);
@@ -240,45 +240,50 @@ li {
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0);
+      -webkit-transition-delay: 200ms;
+      -moz-transition-delay: 200ms;
+      -ms-transition-delay: 200ms;
+      -o-transition-delay: 200ms;
+      transition-delay: 200ms; }
     @media only screen and (max-width: 620px) {
       /* line 88, sass/_common.scss */
       li.no-link {
         padding-left: 0; } }
-  /* line 125, sass/_common.scss */
+  /* line 126, sass/_common.scss */
   li a {
     padding: 0.68182em 0 0.68182em 7%;
     display: block; }
-    /* line 129, sass/_common.scss */
+    /* line 130, sass/_common.scss */
     li a:hover {
       color: #463f39;
       background-color: #dedacf; }
     @media only screen and (max-width: 620px) {
-      /* line 125, sass/_common.scss */
+      /* line 126, sass/_common.scss */
       li a {
         padding-left: 1%;
         padding-right: 1%; } }
 
-/* line 141, sass/_common.scss */
+/* line 142, sass/_common.scss */
 .contact {
   padding: 0 0 2.27273em 7%; }
   @media only screen and (max-width: 620px) {
-    /* line 141, sass/_common.scss */
+    /* line 142, sass/_common.scss */
     .contact {
       padding-left: 1%;
       padding-right: 1%;
       font-size: 1.66667em; } }
 
-/* line 151, sass/_common.scss */
+/* line 152, sass/_common.scss */
 .rga {
   color: #e5193c; }
-  /* line 154, sass/_common.scss */
+  /* line 155, sass/_common.scss */
   .rga:hover {
     color: #a0112a; }
 
-/* line 159, sass/_common.scss */
+/* line 160, sass/_common.scss */
 .twitter {
   color: #33ccff; }
-  /* line 162, sass/_common.scss */
+  /* line 163, sass/_common.scss */
   .twitter:hover {
     color: #00ace6; }
