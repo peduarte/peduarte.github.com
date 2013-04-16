@@ -22,14 +22,15 @@ body {
 
 	@include media-query(mobile) {
 		font-size: 10px;
+		line-height: $base-line-height - 10;
 		text-align: center;
 	}
 }
 
-hgroup {
+header {
 	display: inline-block;
 	background: darken($color-primary, 15%);
-	padding: $bleed 0 $bleed $bleed;
+	padding: ($bleed - 2) 0 ($bleed - 2) $bleed;
 	width: 100%;
 
 	@include media-query(mobile) {
@@ -85,6 +86,10 @@ li {
 	letter-spacing: 5px;
 	font-weight: 100;
 	line-height: em(50px, 60px);
+
+	@include media-query(mobile) {
+		letter-spacing: 1px;
+	}
 
 	&.no-link {
 		padding: em(15px) 0 em(15px) $bleed;
