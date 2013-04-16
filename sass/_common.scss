@@ -161,9 +161,10 @@ li {
 	padding: 0 0 em(50px) $bleed;
 
 	@include media-query(mobile) {
-		padding-left: $bleedSmall;
-		padding-right: $bleedSmall;
+		padding-left: $bleedSmall + 10%;
+		padding-right: $bleedSmall + 10%;
 		font-size: em(20px, 12px);
+
 	}
 }
 
