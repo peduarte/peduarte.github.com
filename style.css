@@ -220,6 +220,7 @@ li {
       width: 100%;
       bottom: 0;
       opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
       -webkit-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
       -moz-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
       -ms-transition: all 600ms 0 cubic-bezier(0.19, 1, 0.22, 1);
@@ -247,9 +248,10 @@ li {
           -ms-transform: translate3d(0, 0, 0);
           -o-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } }
-    /* line 125, sass/_common.scss */
+    /* line 126, sass/_common.scss */
     li.no-link:hover span {
       opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
@@ -264,40 +266,40 @@ li {
       /* line 89, sass/_common.scss */
       li.no-link {
         padding-left: 0; } }
-  /* line 136, sass/_common.scss */
+  /* line 139, sass/_common.scss */
   li a {
     padding: 0.68182em 0 0.68182em 7%;
     display: block; }
-    /* line 140, sass/_common.scss */
+    /* line 143, sass/_common.scss */
     li a:hover {
       color: #463f39;
       background-color: #dedacf; }
     @media only screen and (max-width: 620px) {
-      /* line 136, sass/_common.scss */
+      /* line 139, sass/_common.scss */
       li a {
         padding-left: 0%;
         padding-right: 0%; } }
 
-/* line 152, sass/_common.scss */
+/* line 155, sass/_common.scss */
 .contact {
   padding: 0 0 2.27273em 7%; }
   @media only screen and (max-width: 620px) {
-    /* line 152, sass/_common.scss */
+    /* line 155, sass/_common.scss */
     .contact {
       padding-left: 0%;
       padding-right: 0%;
       font-size: 1.66667em; } }
 
-/* line 162, sass/_common.scss */
+/* line 165, sass/_common.scss */
 .rga {
   color: #e5193c; }
-  /* line 165, sass/_common.scss */
+  /* line 168, sass/_common.scss */
   .rga:hover {
     color: #a0112a; }
 
-/* line 170, sass/_common.scss */
+/* line 173, sass/_common.scss */
 .twitter {
   color: #33ccff; }
-  /* line 173, sass/_common.scss */
+  /* line 176, sass/_common.scss */
   .twitter:hover {
     color: #00ace6; }
