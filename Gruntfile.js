@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 			deploy: {
 				command: function () {
 					grunt.log.ok('deploying to pedroduarte.me');
-					return 'command here';
+					return 'bash deploy-to-github.sh';
 				}
 			}
 		},
@@ -153,6 +153,11 @@ module.exports = function(grunt) {
 			'htmlmin:prod',
 			'compass:prod'
 		]);
+	});
+
+	grunt.registerTask('deploy', function() {
+		this.requires('build');
+		return grunt.task.run('shell:deploy');
 	});
 
 	grunt.registerTask('default', 'serve');
