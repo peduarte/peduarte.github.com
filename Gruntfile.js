@@ -95,6 +95,20 @@ module.exports = function(grunt) {
 			}
 		},
 
+		shell: {
+			options: {
+				failOnError: true,
+				stdout: true,
+				stderr: true
+			},
+			deploy: {
+				command: function () {
+					grunt.log.ok('deploying to pedroduarte.me');
+					return 'command here';
+				}
+			}
+		},
+
 		watch: {
 			styles: {
 				files: ['<%= config.source %>/styles/**/*.scss'],
