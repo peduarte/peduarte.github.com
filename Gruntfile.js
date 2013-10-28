@@ -76,9 +76,8 @@ module.exports = function(grunt) {
 					collapseWhitespace: true,
 					collapseBooleanAttributes: true,
 					removeRedundantAttributes: true,
-					useShortDoctype: true,
-					removeEmptyAttributes: true,
-					removeOptionalTags: true
+					useShortDoctype: true
+					// removeOptionalTags: true // Removed as it was removing closing body/html tag. Weird shit.
 				},
 				files: [{
 					expand: true,
