@@ -1,1 +1,0 @@
-sass --style compressed --update --force sass/style.scss:style.css
