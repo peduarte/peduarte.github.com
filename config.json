@@ -1,6 +1,0 @@
-{
-	"source": "src",
-	"destination": "dest",
-	"port": 9000,
-	"hostname": "localhost"
-}
