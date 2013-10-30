@@ -125,25 +125,26 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.registerTask('previewbuild', function() {
+		return grunt.task.run([
+			'build',
+			'clean:dest',
+			'htmlmin:prod',
+			'compass:prod',
+			'open:source',
+			'connect:source',
+			'watch'
+		]);
+	});
+
 	grunt.registerTask('serve', function() {
-		if (grunt.option('target') === 'dest') {
-			return grunt.task.run([
-				'clean:dest',
-				'htmlmin:prod',
-				'compass:prod',
-				'open:source',
-				'connect:source',
-				'watch'
-			]);
-		} else {
-			return grunt.task.run([
-				'clean:dest',
-				'compass:dev',
-				'open:source',
-				'connect:source',
-				'watch'
-			]);
-		}
+		return grunt.task.run([
+			'clean:dest',
+			'compass:dev',
+			'open:source',
+			'connect:source',
+			'watch'
+		]);
 	});
 
 	grunt.registerTask('build', function() {
