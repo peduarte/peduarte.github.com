@@ -183,9 +183,17 @@ li {
 }
 
 .twitter {
-	color: $color-twitter;
+  color: $color-twitter;
+
+  &:hover {
+    color: darken($color-twitter, 15%);
+  }
+}
+
+.linkedin {
+	color: $color-linkedin;
 
 	&:hover {
-		color: darken($color-twitter, 15%);
+		color: darken($color-linkedin, 15%);
 	}
 }
