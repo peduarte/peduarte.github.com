@@ -67,7 +67,11 @@ h2 {
 	@include media-query(mobile) {
 		font-size: em(22px, 12px);
 	}
+}
 
+h3 {
+  font-size: em(22px);
+  color: lighten($color-primary, 25%);
 }
 
 a {
@@ -180,6 +184,14 @@ li {
 	&:hover {
 		color: darken($color-rga, 15%);
 	}
+}
+
+.stink {
+  color: $color-stink;
+
+  &:hover {
+    color: darken($color-stink, 15%);
+  }
 }
 
 .twitter {
