@@ -72,6 +72,10 @@ h2 {
 h3 {
   font-size: em(22px);
   color: lighten($color-primary, 25%);
+
+  @include media-query(mobile) {
+    font-size: em(22px, 12px);
+  }
 }
 
 a {
@@ -208,4 +212,12 @@ li {
 	&:hover {
 		color: darken($color-linkedin, 15%);
 	}
+}
+
+.github {
+  color: $color-github;
+
+  &:hover {
+    color: darken($color-github, 15%);
+  }
 }
