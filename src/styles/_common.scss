@@ -198,6 +198,14 @@ li {
   }
 }
 
+.fluxx {
+  color: $color-fluxx;
+
+  &:hover {
+    color: darken($color-fluxx, 15%);
+  }
+}
+
 .twitter {
   color: $color-twitter;
 
