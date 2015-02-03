@@ -5,7 +5,8 @@
 			"name": "Website",
 			"link": "http://warp.net",
 			"agency": {"name": "Stinkdigital", "url": "http://stinkdigital"},
-			"tags": ["Backbone.js", "Stylus", "Gulp"]
+			"tags": ["Backbone.js", "Stylus", "Gulp"],
+      "brandColor": "#6E32FF"
 		},
 
 		{
@@ -13,7 +14,8 @@
 			"name": "Web Fundamentals",
 			"link": "https://developers.google.com/web/fundamentals/",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
-			"tags": ["AngularJS", "Jekyll", "Grunt"]
+			"tags": ["AngularJS", "Jekyll", "Grunt"],
+      "brandColor": "#4285f4"
 		},
 
 		{
@@ -21,7 +23,8 @@
 			"name": "World Cup",
 			"link": "https://google.com/worldcup",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
-			"tags": ["Django", "Grunt", "Sass"]
+			"tags": ["Django", "Grunt", "Sass"],
+      "brandColor": "#4285f4"
 		},
 
 		{
@@ -29,14 +32,16 @@
 			"name": "Open Your City",
 			"link": "http://openyourcity.heineken.com/",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
-			"tags": ["AngularJS", "Grunt", "Sass"]
+			"tags": ["AngularJS", "Grunt", "Sass"],
+      "brandColor": "#108F4A"
 		},
 
 		{
 			"client": "Heineken",
 			"name": "The Sub",
 			"link": "https://www.the-sub.com",
-			"agency": {"name": "R/GA", "url": "http://rga.com"}
+			"agency": {"name": "R/GA", "url": "http://rga.com"},
+      "brandColor": "#108F4A"
 		},
 
 		{
@@ -44,7 +49,8 @@
 			"name": "Main website's prototype",
 			"link": "http://www.beatsbydre.com/",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
-			"tags": ["Jekyll", "Sass"]
+			"tags": ["Jekyll", "Sass"],
+      "brandColor": "#ff0000"
 		},
 
 		{
@@ -52,7 +58,8 @@
 			"name": "Take Your Place",
 			"link": "",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
-			"tags": ["AngularJS", "Yeoman", "Sass"]
+			"tags": ["AngularJS", "Yeoman", "Sass"],
+      "brandColor": "#419eda"
 		},
 
 		{

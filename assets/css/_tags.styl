@@ -9,38 +9,7 @@
 
 .Tag {
 	display: inline-block;
-	color: transparent;
-	animation: hideTag 200ms ease-out;
-
-	.Project-link:hover & {
-		color: transparent;
-		animation: showTag 800ms ease-out forwards;
-
-		for num in (1..5) {
-			&:nth-child({num}) {
-				animation-delay: (num)*0.29s;
-			}
-		}
-	}
 
 	&:after { content: ", "; }
 	&:last-child:after { content: "" }
-}
-
-@keyframes showTag {
-	0% {
-		color: transparent;
-	}
-	100% {
-		color: black;
-	}
-}
-
-@keyframes hideTag {
-	0% {
-		color: $colorBlack;
-	}
-	100% {
-		color: transparent;
-	}
 }

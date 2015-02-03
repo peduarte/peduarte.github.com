@@ -14,7 +14,7 @@ block content
   main
       ul.Projects
         each project, index in records.projects
-          li.Project-item
+          li(class="Project-item" data-brand-color=project.brandColor)
             a(href=project.link target="_blank" class="Project-link")
               h3.Project-client= project.client
               p.Project-name= project.name
