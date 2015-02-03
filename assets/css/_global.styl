@@ -18,11 +18,14 @@ body {
 a {
 	color: $colorBlack;
 	text-decoration: none;
+  font-weight: 700;
 }
 
 
 main {
 	background: $colorYellow;
+  opacity: 0;
+  animation: fadeIn 2000ms 2000ms ease-in-out forwards;
 
 	+above(5) {
 		padding-top: $lineHeight;
