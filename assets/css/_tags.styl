@@ -4,7 +4,16 @@
 	font-size: $fontSmall;
 	font-style: italic;
 	text-align: right;
-	float: right;
+
+  position: absolute;
+  right: 0;
+  bottom: $lineHeight;
+
+  display: none;
+
+  +above(3) {
+    display: block;
+  }
 }
 
 .Tag {
