@@ -314,7 +314,7 @@ li > p {
   display: inline-block;
 }
 .Tag:after {
-  content: ", ";
+  content: ",\00a0";
 }
 .Tag:last-child:after {
   content: "";
