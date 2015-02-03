@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+  font-family: $fontDefault;
+  font-size: $fontBase;
+  line-height: 1.6250em; /* 26px */
+  font-smoothing: antialiased;
+
+  {baseline-grid};
+}
+
+
+a {
+	color: $colorBlack;
+	text-decoration: none;
+}
+
+
+main {
+	background: $colorYellow;
+
+	+above(5) {
+		padding-top: $lineHeight;
+		margin-left: 50%;
+	}
+
+	&,
+	a {
+		// color: $colorWhite;
+	}
+}

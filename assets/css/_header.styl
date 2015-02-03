@@ -1,0 +1,56 @@
+.Header {
+	padding: $lineHeight $lineHeight $lineHeight*2;
+
+	+above(3) {
+		padding: $lineHeight $lineHeight*2 $lineHeight*2;
+	}
+
+	+above(4) {
+		padding: $lineHeight*2 $lineHeight*3 $lineHeight*3;
+	}
+
+	+above(5) {
+		padding-top: 0;
+		padding-bottom: 0;
+		position: fixed;
+		height: 100%;
+		width: 50%;
+		top: 0;
+		bottom: 0;
+	}
+}
+
+
+.Header-content {
+	+above(5) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 450px;
+	}
+}
+
+.Header-title {
+	position: relative;
+	padding-bottom: $lineHeight;
+	margin-bottom: $lineHeight;
+
+	&:after {
+		content: "";
+		width: 100%;
+		max-width: $lineHeight * 4;
+		height: 10px;
+		background: $colorBlack;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.Header-subtitle {
+	font-weight: bold;
+}
+
+.Header-intro {
+	padding: 0;
+}

@@ -2,71 +2,20 @@ extends layout
 
 block content
 
-  header
+  header.Header
     .Header-content
-      h1 Pedro Duarte
-      h2 Front End Developer
-      p  I am a london based freelance front end and prototype developer.
+      h1.Header-title Pedro Duarte
+      p.Header-subtitle Front End Developer
+      p.Header-intro  I am a london based freelance front end and prototype developer.
 
   main
+
       ul.Projects
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
+        each project, index in records.projects
+          li.Project-item
+            a(href=project.link targer="_blank" class="Project-link")
+              h3.Project-client= project.client
+              p.Project-name= project.name
 
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
 
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
 
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
-
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
-
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-            ul.Tags
-              li.Tag AngularJS
-
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals
-
-        li.Project-item
-          a.Project-link
-            h3.Project-client Google
-            p.Project-name Web Fundamentals

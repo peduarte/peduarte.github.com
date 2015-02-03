@@ -1,0 +1,22 @@
+{
+	"projects": [
+		{
+			"client": "Warp Records",
+			"name": "Website",
+			"link": "http://warp.net",
+			"tags": ["Backbone.js", "Grunt", "Gulp"]
+		},
+		{
+			"client": "Google",
+			"name": "Web Fundamentals",
+			"link": "https://developers.google.com/web/fundamentals/",
+			"tags": ["AngularJs", "Gulp"]
+		},
+		{
+			"client": "Google",
+			"name": "World Cup Trends",
+			"link": "https://google.com/worldcup",
+			"tags": ["Django", "Grunt"]
+		}
+	]
+}

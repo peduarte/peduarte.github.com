@@ -1,0 +1,40 @@
+.Projects {
+	list-style: none;
+	padding: $lineHeight;
+
+	+above(3) {
+		padding: $lineHeight*2;
+	}
+
+	+above(4) {
+		padding: 0 $lineHeight*3;
+
+	}
+
+	+above(5) {
+		padding-top: $lineHeight;
+	}
+}
+
+.Project-item {
+	&:last-child .Project-link {
+		border-width: 0;
+	}
+}
+
+.Project-link {
+	display: block;
+	border-bottom: 1px solid $colorBlack;
+	padding: $lineHeight 0 ($lineHeight - 1);
+}
+
+.Project-client {
+	text-transform: uppercase;
+	type--large(false); // set false to stop resizing on media queries
+	padding: 0;
+}
+
+.Project-name {
+	padding: 0;
+	display: inline-block;
+}
