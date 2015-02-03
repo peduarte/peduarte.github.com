@@ -43,9 +43,12 @@ a {
 }
 main {
   background: #ecda10;
+  transition: background-color 600ms linear;
+}
+body:not(.debug) main {
   opacity: 0;
-  -webkit-animation: fadeIn 2000ms 2000ms ease-in-out forwards;
-          animation: fadeIn 2000ms 2000ms ease-in-out forwards;
+  -webkit-animation: fadeIn 2000ms 1000ms ease-in-out forwards;
+          animation: fadeIn 2000ms 1000ms ease-in-out forwards;
 }
 @media only screen and (min-width: 1050px) {
   main {
@@ -299,72 +302,12 @@ li > p {
 }
 .Tag {
   display: inline-block;
-  color: transparent;
-  -webkit-animation: hideTag 200ms ease-out;
-          animation: hideTag 200ms ease-out;
-}
-.Project-link:hover .Tag {
-  color: transparent;
-  -webkit-animation: showTag 800ms ease-out forwards;
-          animation: showTag 800ms ease-out forwards;
-}
-.Project-link:hover .Tag:nth-child(1) {
-  -webkit-animation-delay: 0.29s;
-          animation-delay: 0.29s;
-}
-.Project-link:hover .Tag:nth-child(2) {
-  -webkit-animation-delay: 0.58s;
-          animation-delay: 0.58s;
-}
-.Project-link:hover .Tag:nth-child(3) {
-  -webkit-animation-delay: 0.87s;
-          animation-delay: 0.87s;
-}
-.Project-link:hover .Tag:nth-child(4) {
-  -webkit-animation-delay: 1.16s;
-          animation-delay: 1.16s;
-}
-.Project-link:hover .Tag:nth-child(5) {
-  -webkit-animation-delay: 1.45s;
-          animation-delay: 1.45s;
 }
 .Tag:after {
   content: ", ";
 }
 .Tag:last-child:after {
   content: "";
-}
-@-webkit-keyframes showTag {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: #000;
-  }
-}
-@keyframes showTag {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: #000;
-  }
-}
-@-webkit-keyframes hideTag {
-  0% {
-    color: #000;
-  }
-  100% {
-    color: transparent;
-  }
-}
-@keyframes hideTag {
-  0% {
-    color: #000;
-  }
-  100% {
-    color: transparent;
-  }
 }
 @-webkit-keyframes fadeIn {
   100% {
