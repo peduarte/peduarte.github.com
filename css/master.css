@@ -221,6 +221,7 @@ li > p {
   position: relative;
   padding-bottom: 26px;
   margin-bottom: 26px;
+  text-transform: uppercase;
   opacity: 0;
   -webkit-animation: fadeIn 800ms 100ms ease-in-out forwards;
           animation: fadeIn 800ms 100ms ease-in-out forwards;
