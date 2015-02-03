@@ -1,0 +1,59 @@
+/**
+*
+* Typography
+*
+* Lloyds Experiments
+*
+* Fluxx
+* @author Pedro Duarte
+**
+*
+**/
+
+// Just normalizing text
+// Recommend using padding instead of margin
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+// Definitions
+.small,
+small {
+  type--small();
+}
+
+.base,
+p,
+ul,
+ol,
+dl {
+  type--base();
+}
+
+.medium,
+h4 {
+  type--medium();
+}
+
+.large,
+h3 {
+  type--large();
+}
+
+.xlarge,
+h2 {
+  type--xlarge();
+}
+
+.xxlarge,
+h1 {
+  type--xxlarge();
+}
+
+.huge {
+  type--huge();
+}
+
+li > p {
+  padding-top: 0;
+}

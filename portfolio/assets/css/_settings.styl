@@ -1,0 +1,194 @@
+/**
+*
+* Settings
+*
+**/
+
+
+$fontDefault = 'Lora', serif;
+$fontHighlight = 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$lineHeight = 26px;
+
+// Defining font sizes
+$fontSmall = 13px;
+$fontBase = 16px;
+$fontMedium = 20px;
+$fontLarge = 26px;
+$fontXLarge = 42px;
+$fontXXLarge = 68px;
+$fontHuge = 110px;
+
+// Defining colors
+$colorWhite = #ffffff;
+$colorBlack = #000000;
+$colorRed = #cc0000;
+$colorYellow = #ecda10;
+$colorFaded = lighten(#000000, 50%);
+
+// Mixin to show a baseline grid
+// only visible when body has 'debug' class
+baseline-grid = @block {
+  position: relative;
+
+  &:after {
+		/* autoprefixer: off */
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+
+    background-image: -moz-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(95%,transparent),color-stop(100%, rgba(0, 0, 0, .1)));
+    background-image: -webkit-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+    background-image: -o-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+    background-image: -ms-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+    background-image: linear-gradient(top, rgba(0, 0, 0, .1) 95%,#cc0000 100%);
+
+    -webkit-background-size: 100% 26px;
+    -moz-background-size: 100% 26px;
+    -ms-background-size: 100% 26px;
+    background-size: 100% 26px;
+    display: none;
+  }
+
+  &.debug:after {
+    display: block;
+    pointer-events: none;
+  }
+}
+
+
+// Mixins simply to store CSS rules
+rule--small = @block {
+  font-size: $fontSmall;
+  line-height: 2.0000em; /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  letter-spacing: 0;
+}
+
+rule--base = @block {
+  font-size: $fontBase;
+  line-height: 1.6250em; /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  letter-spacing: 0;
+}
+
+rule--medium = @block {
+  font-size: $fontMedium;
+  font-weight: 300;
+  line-height: 1.3000em; /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+}
+
+rule--large = @block {
+  font-family: $fontHighlight;
+  font-size: $fontLarge;
+  font-weight: 300;
+  line-height: 1.0000em; /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+}
+
+rule--xlarge = @block {
+  font-family: $fontHighlight;
+  font-size: $fontXLarge;
+  font-weight: 300;
+  line-height: 1.2381em; /* 52px */
+  padding-top: 0.6190em;
+  padding-bottom: 0;
+}
+
+rule--xxlarge = @block {
+  font-family: $fontHighlight;
+  font-size: $fontXXLarge;
+  font-weight: 300;
+  line-height: 1.1471em; /* 78px */
+  padding-top: 0.3824em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+rule--huge = @block {
+  font-family: $fontHighlight;
+  font-size: $fontHuge;
+  font-weight: 300;
+  line-height: 1.19em; /* 130px */
+  padding-top: 0.2364em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+type--small() {
+  {rule--small};
+}
+
+type--base() {
+  {rule--base};
+}
+
+type--medium(applyMobileFirst = true) {
+	if applyMobileFirst {
+    type--base();
+    +above(4) {
+      {rule--medium};
+    }
+	} else {
+		{rule--medium};
+	}
+}
+
+type--large(applyMobileFirst = true) {
+  if applyMobileFirst {
+    type--medium(false);
+    +above(4) {
+      {rule--large};
+    }
+  }
+  else {
+    {rule--large};
+  }
+}
+
+type--xlarge(applyMobileFirst = true) {
+  if applyMobileFirst {
+    type--large(false);
+    +above(4) {
+      {rule--xlarge};
+    }
+  }
+  else {
+    {rule--xlarge};
+  }
+}
+
+type--xxlarge(applyMobileFirst = true) {
+  if applyMobileFirst {
+    type--xlarge(false);
+    +above(4) {
+      {rule--xxlarge};
+    }
+  }
+  else {
+    {rule--xxlarge};
+  }
+}
+
+type--huge(applyMobileFirst = true) {
+  if applyMobileFirst {
+    type--xxlarge(false);
+    +above(4) {
+      {rule--huge};
+    }
+  }
+  else {
+    {rule--huge};
+  }
+}
