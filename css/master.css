@@ -52,7 +52,6 @@ body:not(.debug) main {
 }
 @media only screen and (min-width: 1050px) {
   main {
-    padding-top: 26px;
     margin-left: 50%;
   }
 }
@@ -269,6 +268,9 @@ li > p {
     padding-bottom: 26px;
   }
 }
+.Project-item {
+  position: relative;
+}
 .Project-item:last-child .Project-link {
   border-width: 0;
 }
@@ -298,7 +300,15 @@ li > p {
   font-size: 13px;
   font-style: italic;
   text-align: right;
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 26px;
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .Tags {
+    display: block;
+  }
 }
 .Tag {
   display: inline-block;
