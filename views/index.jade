@@ -13,9 +13,12 @@ block content
       ul.Projects
         each project, index in records.projects
           li.Project-item
-            a(href=project.link targer="_blank" class="Project-link")
+            a(href=project.link target="_blank" class="Project-link")
               h3.Project-client= project.client
               p.Project-name= project.name
-
+              ul.Tags
+                if project.tags
+                  each tag in project.tags
+                    li.Tag= tag
 
 

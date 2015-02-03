@@ -4,19 +4,151 @@
 			"client": "Warp Records",
 			"name": "Website",
 			"link": "http://warp.net",
+			"agency": "Stinkdigital",
+			"agencyUrl": "http://stinkdigital.com",
 			"tags": ["Backbone.js", "Grunt", "Gulp"]
 		},
+
 		{
 			"client": "Google",
 			"name": "Web Fundamentals",
 			"link": "https://developers.google.com/web/fundamentals/",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
 			"tags": ["AngularJs", "Gulp"]
 		},
+
 		{
 			"client": "Google",
-			"name": "World Cup Trends",
+			"name": "World Cup",
 			"link": "https://google.com/worldcup",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
 			"tags": ["Django", "Grunt"]
+		},
+
+		{
+			"client": "Heineken",
+			"name": "Open Your City",
+			"link": "http://openyourcity.heineken.com/",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
+			"tags": ["AngularJS", "Grunt", "Sass"]
+		},
+
+		{
+			"client": "Heineken",
+			"name": "The Sub",
+			"link": "https://www.the-sub.com",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com"
+		},
+
+		{
+			"client": "Beats By Dre",
+			"name": "Main website's prototype",
+			"link": "http://www.beatsbydre.com/",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
+			"tags": ["Jekyll", "Sass"]
+		},
+
+		{
+			"client": "O2",
+			"name": "Take Your Place",
+			"link": "",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
+			"tags": ["AngularJS", "Yeoman", "Sass"]
+		},
+
+		{
+			"client": "JD Sports",
+			"name": "King of Trainers",
+			"link": "http://vimeo.com/47080307",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com"
+		},
+
+		{
+			"client": "Aston Martin",
+			"name": "Main website",
+			"link": "http://www.astonmartin.com",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com"
+		},
+
+
+		{
+			"client": "Unilever",
+			"name": "Compressed",
+			"link": "http://www.compresseddeodorants.com/",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com"
+		},
+
+		{
+			"client": "Ray Ban",
+			"name": "Ambermatic",
+			"link": "http://www.ray-ban.com/sweden/shades-of-yellow",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com",
+			"tags": ["jQuery"]
+		},
+
+		{
+			"client": "Sara Lee",
+			"name": "Senseo",
+			"link": "http://www.senseo.com/",
+			"agency": "R/GA",
+			"agencyUrl": "http://rga.com"
+		},
+
+		{
+			"client": "Ale De Carvalho",
+			"name": "Portfolio",
+			"link": "http://a-d-c.net/",
+			"tags": ["SOTD", "WordPress"]
+		},
+
+		{
+			"client": "Havey Nichols",
+			"name": "E-commerce & blogging platform",
+			"link": "http://www.harveynichols.com/",
+			"agency": "Pod1",
+			"agencyUrl": "http://pod1.com",
+			"tags": ["Magento", "WordPress"]
+		},
+
+		{
+			"client": "Gieves & Hawkes",
+			"name": "E-commerce & blogging platform",
+			"link": "http://www.gievesandhawkes.com/",
+			"agency": "Pod1",
+			"agencyUrl": "http://pod1.com",
+			"tags": ["Magento", "WordPress"]
+		},
+
+		{
+			"client": "Links of London",
+			"name": "E-commerce platform",
+			"link": "http://www.linksoflondon.com/gb-en/",
+			"agency": "Pod1",
+			"agencyUrl": "http://pod1.com",
+			"tags": [""]
+		},
+
+		{
+			"client": "Matthew Williamson",
+			"name": "Blogging platform",
+			"link": "http://www.matthewwilliamson.com/",
+			"agency": "Pod1",
+			"agencyUrl": "http://pod1.com",
+			"tags": [""]
 		}
+
+
+
+
 	]
 }
