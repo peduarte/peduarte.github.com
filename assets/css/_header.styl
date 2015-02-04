@@ -18,17 +18,8 @@
     top: 0;
     bottom: 0;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 3px;
-      height: 0;
-      background: $colorYellow;
-      transform: translateY(-50%);
-      animation: expandBar 1000ms 1000ms forwards $easeInQuart;
-    }
+    opacity: 0;
+    animation: showCopy 0ms 1400ms linear forwards;
   }
 }
 
@@ -48,11 +39,6 @@
   padding-bottom: $lineHeight;
   margin-bottom: $lineHeight;
   text-transform: uppercase;
-
-  +above(5) {
-    opacity: 0;
-    animation: fadeIn 800ms 100ms ease-in-out forwards;
-  }
 
   &:after {
     content: "";

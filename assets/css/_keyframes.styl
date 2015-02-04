@@ -10,6 +10,12 @@
   }
 }
 
+@keyframes showCopy {
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes expandBar {
   100% {
     height: 100%;
@@ -17,17 +23,21 @@
 }
 
 @keyframes slideMain {
+  70% {
+    margin-left: 0;
+  }
+  90% {
+    transform: translate3d(0, 0, 0);
+  }
   100% {
-    width: 50%;
+    margin-left: 50%;
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes showProjects {
   0% {
-    transform: translateX(-12px);
-  }
-  25% {
-    transform: translateY(0);
+    // transform: translate3d(-50px, 0, 0);
   }
   100% {
     opacity: 1;

@@ -10,6 +10,8 @@ body {
   font-size: $fontBase;
   line-height: 26px;
   font-smoothing: antialiased;
+  background: $colorYellow;
+  color: $colorBlack;
 
   {baseline-grid};
 }
@@ -23,16 +25,19 @@ a {
 
 
 main {
-  background: $colorYellow;
+  background: $colorBlack;
   transition: background-color 600ms linear;
   position: relative;
   overflow: hidden;
 
+  &,
+  a {
+    color: $colorWhite;
+  }
+
   +above(5) {
-    margin-left: 50%;
-    opacity: 1;
-    width: 0;
-    animation: slideMain 800ms 2000ms forwards cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transform: translate3d(-100%, 0, 0);
+    animation: slideMain 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
   }
 }
 
@@ -72,4 +77,32 @@ main {
     width: $lineHeight*2;
   }
 
+}
+
+.page {
+  padding: $lineHeight;
+  max-width: 960px;
+  margin: 0 auto;
+
+  h1 {
+    type--large();
+  }
+
+  h2 {
+    type--medium();
+    border-top: 1px solid $colorBlack;
+    margin-top: $lineHeight;
+  }
+
+  h3 {
+
+  }
+
+  ul {
+    list-style: inside;
+    padding-top: 0;
+    ul {
+      padding-left: $lineHeight;
+    }
+  }
 }
