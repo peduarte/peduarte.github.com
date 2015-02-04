@@ -23,12 +23,13 @@ $fontHuge = 110px;
 $colorWhite = #ffffff;
 $colorBlack = #000000;
 $colorRed = #cc0000;
-$colorYellow = #ecda10;
+$colorYellow = #F9E720;
 $colorFaded = lighten(#000000, 50%);
 
 // Animation
 $animationDelayMain = 800ms;
 $easeInQuart = cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart = cubic-bezier(0.165, 0.84, 0.44, 1);
 
 // Mixin to show a baseline grid
 // only visible when body has 'debug' class
@@ -63,6 +64,8 @@ baseline-grid = @block {
   &.debug:after {
     display: block;
     pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 400ms forwards;
   }
 }
 

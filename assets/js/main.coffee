@@ -7,5 +7,3 @@
 #       main.style.backgroundColor = this.getAttribute 'data-brand-color'
 #     project.addEventListener 'mouseleave', ->
 #       main.style.backgroundColor = ''
-
-

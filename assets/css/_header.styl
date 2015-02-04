@@ -39,6 +39,7 @@
     top: 50%;
     transform: translateY(-50%);
     max-width: 475px;
+    margin-right: $lineHeight*2;
   }
 }
 
@@ -47,8 +48,11 @@
   padding-bottom: $lineHeight;
   margin-bottom: $lineHeight;
   text-transform: uppercase;
-  opacity: 0;
-  animation: fadeIn 800ms 100ms ease-in-out forwards;
+
+  +above(5) {
+    opacity: 0;
+    animation: fadeIn 800ms 100ms ease-in-out forwards;
+  }
 
   &:after {
     content: "";
@@ -64,13 +68,19 @@
 
 .Header-subtitle {
   font-weight: 700;
-  opacity: 0;
-  animation: fadeIn 800ms 400ms ease-in-out forwards;
+
+  +above(5) {
+    opacity: 0;
+    animation: fadeIn 800ms 500ms ease-in-out forwards;
+  }
 }
 
 .Header-intro {
   padding: 0;
   margin-bottom: $lineHeight;
-  opacity: 0;
-  animation: fadeIn 800ms 700ms ease-in-out forwards;
+
+  +above(5) {
+    opacity: 0;
+    animation: fadeIn 800ms 550ms ease-in-out forwards;
+  }
 }
