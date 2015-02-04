@@ -44,15 +44,19 @@ a {
 main {
   background: #ecda10;
   transition: background-color 600ms linear;
-}
-body:not(.debug) main {
+  position: relative;
+  overflow: hidden;
   opacity: 0;
-  -webkit-animation: fadeIn 2000ms 1000ms ease-in-out forwards;
-          animation: fadeIn 2000ms 1000ms ease-in-out forwards;
+  -webkit-animation: fadeIn 2000ms 800ms ease-in-out both;
+          animation: fadeIn 2000ms 800ms ease-in-out both;
 }
 @media only screen and (min-width: 1050px) {
   main {
     margin-left: 50%;
+    opacity: 1;
+    width: 0;
+    -webkit-animation: slideMain 800ms 2200ms forwards cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation: slideMain 800ms 2200ms forwards cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 }
 h1,
@@ -206,6 +210,20 @@ li > p {
     top: 0;
     bottom: 0;
   }
+  .Header:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 3px;
+    height: 0;
+    background: #ecda10;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-animation: expandBar 1000ms 1000ms forwards cubic-bezier(0.895, 0.03, 0.685, 0.22);
+            animation: expandBar 1000ms 1000ms forwards cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
 }
 @media only screen and (min-width: 1050px) {
   .Header-content {
@@ -214,7 +232,7 @@ li > p {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    max-width: 450px;
+    max-width: 475px;
   }
 }
 .Header-title {
@@ -267,6 +285,9 @@ li > p {
   .Projects {
     padding-top: 26px;
     padding-bottom: 26px;
+    opacity: 0;
+    -webkit-animation: showProjects 1200ms 3200ms forwards;
+            animation: showProjects 1200ms 3200ms forwards;
   }
 }
 .Project-item {
@@ -326,6 +347,36 @@ li > p {
   }
 }
 @keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes expandBar {
+  100% {
+    height: 100%;
+  }
+}
+@keyframes expandBar {
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes slideMain {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes slideMain {
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes showProjects {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showProjects {
   100% {
     opacity: 1;
   }
