@@ -12,7 +12,7 @@
 		{
 			"client": "Google",
 			"name": "Web Fundamentals",
-			"link": "https://developers.google.com/web/fundamentals/",
+			"link": "http://developers.google.com/web/fundamentals/",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
 			"tags": ["AngularJS", "Jekyll", "Grunt"],
       "brandColor": "#4285f4"
@@ -21,7 +21,7 @@
 		{
 			"client": "Google",
 			"name": "World Cup",
-			"link": "https://google.com/worldcup",
+			"link": "http://google.com/trneds/worldcup",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
 			"tags": ["Django", "Grunt", "Sass"],
       "brandColor": "#4285f4"
@@ -39,7 +39,7 @@
 		{
 			"client": "Heineken",
 			"name": "The Sub",
-			"link": "https://www.the-sub.com",
+			"link": "http://www.the-sub.com",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
       "brandColor": "#108F4A"
 		},
