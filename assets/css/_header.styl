@@ -17,6 +17,18 @@
     width: 50%;
     top: 0;
     bottom: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 3px;
+      height: 0;
+      background: $colorYellow;
+      transform: translateY(-50%);
+      animation: expandBar 1000ms 1000ms forwards $easeInQuart;
+    }
   }
 }
 
@@ -26,7 +38,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 450px;
+    max-width: 475px;
   }
 }
 

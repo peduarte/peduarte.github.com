@@ -25,13 +25,18 @@ a {
 main {
   background: $colorYellow;
   transition: background-color 600ms linear;
+  position: relative;
+  overflow: hidden;
 
-  body:not(.debug) &{
-    opacity: 0;
-    animation: fadeIn 2000ms $animationDelayMain ease-in-out forwards;
-  }
+  opacity: 0;
+  animation: fadeIn 2000ms 800ms ease-in-out both;
 
   +above(5) {
     margin-left: 50%;
+    opacity: 1;
+    width: 0;
+    animation: slideMain 800ms 2200ms forwards cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
+
+
 }
