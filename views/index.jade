@@ -11,11 +11,6 @@ block content
       p.Header-intro
         | You can find me on #[a(href="http://twitter.com/peduarte") Twitter], #[a(href="https://github.com/peduarte/") Github] & #[a(href="http://uk.linkedin.com/in/peduarteltd") LinkedIn].
 
-    button.GridToggler
-      - var n = 0
-        while n < 8
-          span= n++
-
   main
       ul.Projects
         each project, index in records.projects
