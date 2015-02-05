@@ -46,28 +46,7 @@ main {
       margin-left: 0;
       transform: translate3d(calc(-100% - 100px), 0, 0);
       animation: slideMain 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
-
-
     }
   }
 
-}
-
-.animation-fold {
-  +above(5) {
-    .cssanimations & {
-      content: "";
-      display: block;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 100px;
-      background: black;
-      border-radius: 0 100% 100% 0;
-      left: -100px;
-      transform: translate3d(0, 0, 0);
-      animation: slideFold 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
-    }
-  }
 }
