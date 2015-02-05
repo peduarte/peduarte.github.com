@@ -54,6 +54,7 @@ a {
 main {
   background: #000;
   transition: background-color 600ms linear;
+  display: block;
 }
 main,
 main a {
