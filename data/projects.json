@@ -50,7 +50,7 @@
 		{
 			"client": "O2",
 			"name": "Take Your Place",
-			"link": "",
+			"link": "https://www.youtube.com/user/TheO2London/TakeYourPlace",
 			"agency": {"name": "R/GA", "url": "http://rga.com"},
 			"tags": ["AngularJS", "Yeoman", "Sass"]
 		},
