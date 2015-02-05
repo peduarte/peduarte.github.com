@@ -5,7 +5,7 @@ css_pipeline = require 'css-pipeline'
 records 		 = require 'roots-records'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee'),
