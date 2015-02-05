@@ -463,18 +463,36 @@ li > p {
     width: 82%;
   }
 }
-.cv .subheading {
-  width: 25%;
-  margin-right: 5%;
+@media only screen and (min-width: 800px) {
+  .cv .subheading {
+    width: 25%;
+    margin-right: 5%;
+  }
 }
 .cv .subheading p {
-  opacity: 0;
-  transition: opacity 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
   font-size: 13px;
   font-style: italic;
 }
-.cv .copy {
-  width: 70%;
+@media only screen and (max-width: 800px) {
+  .cv .subheading p {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .cv .subheading p {
+    opacity: 0;
+    transition: opacity 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cv .subheading h3 {
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .cv .copy {
+    width: 70%;
+  }
 }
 .cv .career {
   margin-bottom: 26px;
