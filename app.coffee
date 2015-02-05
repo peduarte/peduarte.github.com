@@ -24,3 +24,5 @@ module.exports =
 
   jade:
     pretty: true
+
+  open_browser: false
