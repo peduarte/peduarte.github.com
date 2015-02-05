@@ -15,6 +15,8 @@ body {
   background: #f9e720;
   color: #000;
   height: 100%;
+  -webkit-animation: backgroundColorChanger 30s 5s linear infinite alternate;
+          animation: backgroundColorChanger 30s 5s linear infinite alternate;
   position: relative;
 }
 body:after {
@@ -45,6 +47,10 @@ body.debug:after {
   opacity: 0;
   -webkit-animation: fadeIn 400ms forwards;
           animation: fadeIn 400ms forwards;
+}
+.Project-client {
+  -webkit-animation: colorChanger 30s 5s linear infinite alternate;
+          animation: colorChanger 30s 5s linear infinite alternate;
 }
 a {
   color: #000;
@@ -436,6 +442,26 @@ li > p {
 @keyframes showProjects {
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes backgroundColorChanger {
+  100% {
+    background-color: #fdf7b5;
+  }
+}
+@keyframes backgroundColorChanger {
+  100% {
+    background-color: #fdf7b5;
+  }
+}
+@-webkit-keyframes colorChanger {
+  100% {
+    color: #fdf7b5;
+  }
+}
+@keyframes colorChanger {
+  100% {
+    color: #fdf7b5;
   }
 }
 .cv {
