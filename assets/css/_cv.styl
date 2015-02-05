@@ -31,19 +31,37 @@
   }
 
   .subheading {
-    width: 25%;
-    margin-right: 5%;
+    +above(4) {
+      width: 25%;
+      margin-right: 5%;
+    }
 
     p {
-      opacity: 0;
-      transition: opacity 800ms $easeOutQuart;
       font-size: $fontSmall;
       font-style: italic;
+
+      +below(3) {
+        padding-top: 0;
+      }
+
+      +above(4) {
+        opacity: 0;
+        transition: opacity 800ms $easeOutQuart;
+      }
     }
+
+    h3 {
+      +below(3) {
+        font-weight: bold;
+      }
+    }
+
   }
 
   .copy {
-    width: 70%;
+    +above(4) {
+      width: 70%;
+    }
   }
 
   .career {
@@ -84,7 +102,6 @@
 
   .cv-tags {
     padding-top: 0;
-
     font-style: italic;
 
     &,
