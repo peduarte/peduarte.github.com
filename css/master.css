@@ -71,24 +71,6 @@ main a {
             animation: slideMain 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
   }
 }
-@media only screen and (min-width: 1050px) {
-  .cssanimations .animation-fold {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    background: #000;
-    border-radius: 0 100% 100% 0;
-    left: -100px;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    -webkit-animation: slideFold 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
-            animation: slideFold 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
-  }
-}
 h1,
 h2,
 h3,
@@ -442,24 +424,6 @@ li > p {
     margin-left: 50%;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-  }
-}
-@-webkit-keyframes slideFold {
-  58% {
-    border-radius: 0;
-  }
-  100% {
-    border-radius: 0;
-    left: 100%;
-  }
-}
-@keyframes slideFold {
-  58% {
-    border-radius: 0;
-  }
-  100% {
-    border-radius: 0;
-    left: 100%;
   }
 }
 @-webkit-keyframes showProjects {
