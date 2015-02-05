@@ -14,8 +14,10 @@
     padding-top: $lineHeight;
 		padding-bottom: $lineHeight;
 
-    opacity: 0;
-    animation: showProjects 1800ms 1800ms $easeInOutQuad forwards;
+    .cssanimations & {
+      opacity: 0;
+      animation: showProjects 1800ms 1800ms $easeInOutQuad forwards;
+    }
 	}
 }
 

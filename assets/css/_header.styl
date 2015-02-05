@@ -18,8 +18,10 @@
     top: 0;
     bottom: 0;
 
-    opacity: 0;
-    animation: showCopy 0ms 1400ms linear forwards;
+    .cssanimations & {
+      opacity: 0;
+      animation: showCopy 0ms 1400ms linear forwards;
+    }
   }
 }
 
@@ -56,8 +58,10 @@
   font-weight: 700;
 
   +above(5) {
-    opacity: 0;
-    animation: fadeIn 800ms 500ms ease-in-out forwards;
+    .cssanimations & {
+      opacity: 0;
+      animation: fadeIn 800ms 500ms ease-in-out forwards;
+    }
   }
 }
 
@@ -66,7 +70,9 @@
   margin-bottom: $lineHeight;
 
   +above(5) {
-    opacity: 0;
-    animation: fadeIn 800ms 550ms ease-in-out forwards;
+    .cssanimations & {
+      opacity: 0;
+      animation: fadeIn 800ms 550ms ease-in-out forwards;
+    }
   }
 }
