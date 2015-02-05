@@ -1,0 +1,120 @@
+.cv {
+  padding: $lineHeight $lineHeight $lineHeight*2;
+  background-color: $colorWhite;
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+
+  section {
+    border-top: 1px solid #ccc;
+    margin-top: $lineHeight;
+  }
+
+  .heading, .subheading, .copy, .info {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .heading {
+    +above(4) {
+      width: 18%;
+    }
+  }
+
+  .info {
+    +above(4) {
+      width: 82%;
+    }
+  }
+
+  .subheading {
+    width: 25%;
+    margin-right: 5%;
+
+    p {
+      opacity: 0;
+      transition: opacity 800ms $easeOutQuart;
+      font-size: $fontSmall;
+      font-style: italic;
+    }
+  }
+
+  .copy {
+    width: 70%;
+  }
+
+  .career {
+    margin-bottom: $lineHeight;
+
+    &:hover {
+      .subheading {
+        p {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  h1, h2, h3, h4, p, ul {
+    type--base();
+    font-family: $fontDefault;
+  }
+
+  ul {
+    list-style: inside;
+
+    ul {
+      padding-top: 0;
+      padding-bottom: $lineHeight;
+      padding-left: $lineHeight;
+    }
+  }
+
+  .cv-inline
+  .cv-tags {
+    li {
+      display: inline;
+      &:after { content: ",\00a0"; }
+      &:last-child:after { content: "" }
+    }
+  }
+
+  .cv-tags {
+    padding-top: 0;
+
+    font-style: italic;
+
+    &,
+    a {
+      color: #666;
+    }
+
+    a {
+      font-weight: 400;
+
+      &:hover {
+        color: $colorBlack;
+      }
+    }
+  }
+
+  @media print {
+    h1, h2, h3, h4, p, ul {
+      type--small();
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    section {
+
+    }
+
+    .career {
+      margin-bottom: 0;
+    }
+
+  }
+}
