@@ -12,15 +12,17 @@ block content
         | You can find me on #[a(href="http://twitter.com/peduarte") Twitter], #[a(href="https://github.com/peduarte/") Github] & #[a(href="http://uk.linkedin.com/in/peduarteltd") LinkedIn].
 
   main
-      ul.Projects
-        each project, index in records.projects
-          li(class="Project-item" data-brand-color=project.brandColor)
-            a(href=project.link target="_blank" class="Project-link")
-              h3.Project-client= project.client
-              p.Project-name= project.name
-              ul.Tags
-                if project.tags
-                  each tag in project.tags
-                    li.Tag= tag
+    ul.Projects
+      each project, index in records.projects
+        li(class="Project-item" data-brand-color=project.brandColor)
+          a(href=project.link target="_blank" class="Project-link")
+            h3.Project-client= project.client
+            p.Project-name= project.name
+            ul.Tags
+              if project.tags
+                each tag in project.tags
+                  li.Tag= tag
+
+  div.animation-fold
 
 

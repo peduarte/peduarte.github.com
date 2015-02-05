@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100%;
+}
 
 body {
   font-family: $fontDefault;
@@ -12,6 +15,7 @@ body {
   font-smoothing: antialiased;
   background: $colorYellow;
   color: $colorBlack;
+  height: 100%;
 
   {baseline-grid};
 }
@@ -27,8 +31,6 @@ a {
 main {
   background: $colorBlack;
   transition: background-color 600ms linear;
-  position: relative;
-  overflow: hidden;
 
   &,
   a {
@@ -41,9 +43,31 @@ main {
     }
 
     .cssanimations & {
-      marign-left: 0;
-      transform: translate3d(-100%, 0, 0);
+      margin-left: 0;
+      transform: translate3d(calc(-100% - 100px), 0, 0);
       animation: slideMain 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
+
+
+    }
+  }
+
+}
+
+.animation-fold {
+  +above(5) {
+    .cssanimations & {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      background: black;
+      border-radius: 0 100% 100% 0;
+      left: -100px;
+      transform: translate3d(0, 0, 0);
+      animation: slideFold 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
     }
   }
 }
