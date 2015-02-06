@@ -13,7 +13,7 @@ body {
   line-height: 26px;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  background: #f9e720;
+  background: #faea38;
   color: #000;
   height: 100%;
   position: relative;
@@ -325,7 +325,7 @@ li > p {
   padding-top: 1.3em;
   padding-bottom: 0;
   padding: 0;
-  color: #f9e720;
+  color: #faea38;
   font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .Project-name {
