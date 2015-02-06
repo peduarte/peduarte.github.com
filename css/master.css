@@ -12,11 +12,12 @@ body {
   font-size: 16px;
   line-height: 26px;
   font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   background: #f9e720;
   color: #000;
   height: 100%;
-  -webkit-animation: backgroundColorChanger 30s 5s linear infinite alternate;
-          animation: backgroundColorChanger 30s 5s linear infinite alternate;
+  -webkit-animation: backgroundColorChanger 60s 10s linear infinite alternate;
+          animation: backgroundColorChanger 60s 10s linear infinite alternate;
   position: relative;
 }
 body:after {
@@ -49,8 +50,8 @@ body.debug:after {
           animation: fadeIn 400ms forwards;
 }
 .Project-client {
-  -webkit-animation: colorChanger 30s 5s linear infinite alternate;
-          animation: colorChanger 30s 5s linear infinite alternate;
+  -webkit-animation: colorChanger 60s 10s linear infinite alternate;
+          animation: colorChanger 60s 10s linear infinite alternate;
 }
 a {
   color: #000;
@@ -455,12 +456,12 @@ li > p {
   }
 }
 @-webkit-keyframes colorChanger {
-  100% {
+  50% {
     color: #fdf7b5;
   }
 }
 @keyframes colorChanger {
-  100% {
+  50% {
     color: #fdf7b5;
   }
 }
