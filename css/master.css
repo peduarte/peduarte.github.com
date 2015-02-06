@@ -13,7 +13,7 @@ body {
   line-height: 26px;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  background: #faea38;
+  background: #ffeb3b;
   color: #000;
   height: 100%;
   position: relative;
@@ -325,7 +325,7 @@ li > p {
   padding-top: 1.3em;
   padding-bottom: 0;
   padding: 0;
-  color: #faea38;
+  color: #ffeb3b;
   font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .Project-name {
@@ -441,22 +441,22 @@ li > p {
 }
 @-webkit-keyframes backgroundColorChanger {
   100% {
-    background-color: #fdf7b5;
+    background-color: #fff7b3;
   }
 }
 @keyframes backgroundColorChanger {
   100% {
-    background-color: #fdf7b5;
+    background-color: #fff7b3;
   }
 }
 @-webkit-keyframes colorChanger {
   100% {
-    color: #fdf7b5;
+    color: #fff7b3;
   }
 }
 @keyframes colorChanger {
   100% {
-    color: #fdf7b5;
+    color: #fff7b3;
   }
 }
 .cv {
