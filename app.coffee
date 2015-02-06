@@ -3,6 +3,7 @@ autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
 records 		 = require 'roots-records'
+roots_config = require 'roots-config'
 
 module.exports =
   ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
@@ -12,6 +13,10 @@ module.exports =
     css_pipeline(files: 'assets/css/*.styl'),
     records({
     	projects: {file: 'data/projects.json', path: 'projects'}
+    }),
+    roots_config({
+      clientName: '',
+      clientUrl: ''
     })
   ]
 

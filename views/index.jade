@@ -6,10 +6,19 @@ block content
     .Header-content
       h1.Header-title Pedro Duarte
       p.Header-subtitle Front end & prototype developer
+
+
       p.Header-intro
-        | I help startups and companies improve their online appearance with code. I specialise in progressive enhacement development and I care deeply about user experience and design. I'm currently <strong>available</strong> for contracting.
+        | I help startups and companies improve their online appearance with code. I specialise in progressive enhacement development and I care deeply about user experience and design.
+        if config.clientName
+          | &nbsp;I'm currently working for #[a(href=config.clientUrl target="_blank") #{config.clientName}].
+        else
+          | &nbsp;I'm currently <strong>available</strong> for work.
+
       p.Header-intro
         | You can find me on #[a(href="http://twitter.com/peduarte") Twitter], #[a(href="https://github.com/peduarte/") Github] & #[a(href="http://uk.linkedin.com/in/peduarteltd") LinkedIn].
+
+
 
   main
     ul.Projects
