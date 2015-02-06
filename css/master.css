@@ -16,8 +16,6 @@ body {
   background: #f9e720;
   color: #000;
   height: 100%;
-  -webkit-animation: backgroundColorChanger 60s 10s linear infinite alternate;
-          animation: backgroundColorChanger 60s 10s linear infinite alternate;
   position: relative;
 }
 body:after {
@@ -48,10 +46,6 @@ body.debug:after {
   opacity: 0;
   -webkit-animation: fadeIn 400ms forwards;
           animation: fadeIn 400ms forwards;
-}
-.Project-client {
-  -webkit-animation: colorChanger 60s 10s linear infinite alternate;
-          animation: colorChanger 60s 10s linear infinite alternate;
 }
 a {
   color: #000;
