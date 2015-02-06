@@ -456,12 +456,12 @@ li > p {
   }
 }
 @-webkit-keyframes colorChanger {
-  50% {
+  100% {
     color: #fdf7b5;
   }
 }
 @keyframes colorChanger {
-  50% {
+  100% {
     color: #fdf7b5;
   }
 }
