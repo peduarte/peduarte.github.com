@@ -16,7 +16,8 @@ module.exports =
     }),
     roots_config({
       clientName: 'The Times',
-      clientUrl: 'http://www.news.co.uk/'
+      clientUrl: 'http://www.news.co.uk/',
+      title: 'Senior front end & prototype developer'
     })
   ]
 
