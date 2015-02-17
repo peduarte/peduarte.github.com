@@ -15,8 +15,8 @@ module.exports =
     	projects: {file: 'data/projects.json', path: 'projects'}
     }),
     roots_config({
-      clientName: '',
-      clientUrl: ''
+      clientName: 'The Times',
+      clientUrl: 'http://www.news.co.uk/'
     })
   ]
 
