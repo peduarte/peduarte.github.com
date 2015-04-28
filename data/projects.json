@@ -24,6 +24,13 @@
 			"tags": ["Django", "Grunt", "Sass"]
 		},
 
+    {
+      "client": "Lloyds Bank",
+      "name": "Project under NDA",
+      "agency": {"name": "Fluxx", "url": "http://fluxx.uk.com"},
+      "tags": ["AngularJS", "Grunt", "Sass"]
+    },
+
 		{
 			"client": "Heineken",
 			"name": "Open Your City",
