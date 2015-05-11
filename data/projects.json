@@ -1,6 +1,13 @@
 {
 	"projects": [
 		{
+			"client": "Facebook",
+			"name": "Summer Toolkit",
+			"link": "http://facebooksummer.com",
+			"agency": {"name": "Facebook", "url": "http://facebook.com"},
+			"tags": ["Roots", "Stylus", "Jade"]
+		},
+		{
 			"client": "Warp Records",
 			"name": "Website",
 			"link": "http://warp.net",
