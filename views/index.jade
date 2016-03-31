@@ -11,7 +11,7 @@ block content
       p.Header-intro
         | I help startups and companies improve their online appearance with code. I specialise in progressive enhancement development and I care deeply about user experience and design.
         if config.clientName
-          | &nbsp;I'm currently contracting at #[a(href=config.clientUrl target="_blank") #{config.clientName}] as a #{config.title}.
+          | &nbsp;I'm currently contracting at #[a(href=config.clientUrl target="_blank") #{config.clientName}] building cool stuff with React, Redux and ES6.
         else
           | &nbsp;I'm currently <strong>available</strong> for work.
 
@@ -31,5 +31,3 @@ block content
               if project.tags
                 each tag in project.tags
                   li.Tag= tag
-
-

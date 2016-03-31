@@ -1,6 +1,14 @@
 {
 	"projects": [
 		{
+			"client": "The Times",
+			"name": "Website",
+			"link": "http://thetimes.co.uk",
+			"agency": {"name": "News UK", "url": "http://www.news.co.uk/"},
+			"tags": ["Dust.js", "Sass", "TTD", "ES6", "Gulp"]
+		},
+
+		{
 			"client": "Warp Records",
 			"name": "Website",
 			"link": "http://warp.net",
