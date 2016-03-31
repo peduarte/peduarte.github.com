@@ -1,4 +1,5 @@
-.DS_Store
+_site
+_drafts
 .sass-cache
-node_modules
-dest
+.jekyll-metadata
+.DS_Store

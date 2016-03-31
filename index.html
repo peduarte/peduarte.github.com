@@ -1,0 +1,42 @@
+---
+layout: page
+title: Pedro Duarte
+---
+
+<header class="Header">
+    <div class="Header-content">
+    <h1 class="Header-title">Pedro Duarte</h1>
+        <p class="Header-subtitle">Front end & prototype developer</p>
+
+        <p class="Header-intro">I help startups and companies improve their online appearance with code. I specialise in progressive enhancement development and I care deeply about user experience and design.
+
+        {% if site.client_name %}
+            I'm currently contracting at <a href="{{ site.client_url }}" target="_blank">{{site.client_name}}</a> building cool stuff with React, Redux and ES6.
+        {% else %}
+            I'm currently <strong>available</strong> for work.
+        {% endif %}
+        </p>
+
+        <p class="Header-intro">You can find me on <a href="http://twitter.com/peduarte">Twitter</a>, <a href="https://github.com/peduarte/"> Github</a>, <a href="http://uk.linkedin.com/in/peduarteltd"> LinkedIn</a> or <a href="mailto:contact@peduarte.com"> email</a>.</p>
+    </div>
+</header>
+
+<main>
+    <ul class="Projects">
+        {% for project in site.data.projects %}
+            <li class="Project-item" data-brand-color=project.brandColor>
+                <a href="{{ project.link }}" target="_blank" class="Project-link">
+                    <h3 class="Project-client">{{ project.client }}</h3>
+                    <p class="Project-name">{{ project.name }}</p>
+                    <ul class="Tags">
+                        {% if project.tags %}
+                            {% for tag in project.tags %}
+                                <li class="Tag">{{ tag }}</li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</main>

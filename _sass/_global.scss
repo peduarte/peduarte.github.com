@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font-family: $fontDefault;
+	font-size: $fontBase;
+	line-height: 26px;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	background: $colorYellow;
+	color: $colorBlack;
+	height: 100%;
+
+	@include baseline-grid;
+}
+
+a {
+	color: $colorBlack;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+main {
+	background: $colorBlack;
+	transition: background-color 600ms linear;
+	display: block;
+
+	&,
+	a {
+		color: $colorWhite;
+	}
+
+	@include wide {
+		margin-left: 0;
+		transform: translate3d(-100%, 0, 0);
+		animation: slideMain 1400ms 600ms forwards cubic-bezier(0.77, 0, 0.175, 1);
+
+		.no-js & {
+			margin-left: 50%;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.Projects {
+	list-style: none;
+	padding: $lineHeight;
+
+	@include small {
+		padding: $lineHeight*2;
+	}
+
+	@include medium {
+		padding: $lineHeight $lineHeight*3;
+	}
+
+	@include wide {
+		padding-top: $lineHeight;
+		padding-bottom: $lineHeight;
+		opacity: 0;
+		animation: showProjects 1800ms 1800ms $easeInOutQuad forwards;
+	}
+}
+
+.Project-item {
+	position: relative;
+}
+
+.Project-link {
+	display: block;
+	border-bottom: 1px solid $colorWhite;
+	padding: $lineHeight 0 ($lineHeight - 1);
+	font-weight: normal;
+	transition: box-shadow 400ms $easeOutQuart;
+
+	&:hover {
+		box-shadow: inset 0 -9px 0 0 $colorWhite;
+	}
+}
+
+.Project-client {
+	text-transform: uppercase;
+	@include type--medium(false); // set false to stop resizing on media queries
+	padding: 0;
+	color: $colorYellow;
+	font-family: $fontHighlight;
+}
+
+.Project-name {
+	text-transform: uppercase;
+	@include type--medium(false); // set false to stop resizing on media queries
+	padding: 0;
+	font-family: $fontHighlight;
+}

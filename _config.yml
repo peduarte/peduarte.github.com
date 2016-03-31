@@ -1,0 +1,17 @@
+title: "Pedro Duarte – London based front end developer"
+author: "Pedro Duarte"
+brand: Peduarte
+email: contact@peduarte.com
+description: "Portfolio of London based front end developer, Pedro Duarte"
+footer: "Pedro Duarte"
+baseurl: ""
+url: "http://pedroduarte.me/"
+twitter_username: "@peduarte"
+github_username: "peduarte"
+client_name: "Fathom"
+client_url: "http://fathomlondon.com/"
+job_title: "Front end developer"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title.html
