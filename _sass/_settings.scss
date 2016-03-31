@@ -1,0 +1,221 @@
+/**
+*
+* Settings
+*
+**/
+
+$fontDefault: 'Lora', serif;
+$fontHighlight: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$lineHeight: 26px;
+
+// Defining font sizes
+$fontSmall: 13px;
+$fontBase: 16px;
+$fontMedium: 20px;
+$fontLarge: 26px;
+$fontXLarge: 42px;
+$fontXXLarge: 68px;
+$fontHuge: 110px;
+
+// Defining colors
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorRed: #cc0000;
+$colorYellow: #FFEB3B;
+$colorFaded: lighten(#000000, 50%);
+
+// Animation
+$animationDelayMain: 800ms;
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$easeInOutQuad:  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+// Mixin to show a baseline grid
+// only visible when body has 'debug' class
+@mixin baseline-grid() {
+    position: relative;
+
+    &:after {
+        /* autoprefixer: off */
+        content: "";
+        position: absolute;
+        top: -26px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9;
+
+        background-image: -moz-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(95%,transparent),color-stop(100%, rgba(0, 0, 0, .1)));
+        background-image: -webkit-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+        background-image: -o-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+        background-image: -ms-linear-gradient(top,transparent 95%, rgba(0, 0, 0, .1) 100%);
+        background-image: linear-gradient(top, rgba(0, 0, 0, .1) 95%,#cc0000 100%);
+
+        -webkit-background-size: 100% 26px;
+        -moz-background-size: 100% 26px;
+        -ms-background-size: 100% 26px;
+        background-size: 100% 26px;
+        display: none;
+    }
+
+    &.debug:after {
+      display: block;
+      pointer-events: none;
+      opacity: 0;
+      animation: fadeIn 400ms forwards;
+    }
+}
+
+// Mixins simply to store CSS rules
+@mixin rule--small {
+  font-size: $fontSmall;
+  line-height: 2.0000em; /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  letter-spacing: 0;
+}
+
+@mixin rule--base {
+  font-size: $fontBase;
+  line-height: 1.6250em; /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  letter-spacing: 0;
+}
+
+@mixin rule--medium {
+  font-size: $fontMedium;
+  font-weight: 300;
+  line-height: 1.3000em; /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+}
+
+@mixin rule--large {
+  font-family: $fontHighlight;
+  font-size: $fontLarge;
+  font-weight: 300;
+  line-height: 1.0000em; /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+}
+
+@mixin rule--xlarge {
+  font-family: $fontHighlight;
+  font-size: $fontXLarge;
+  font-weight: 300;
+  line-height: 1.2381em; /* 52px */
+  padding-top: 0.6190em;
+  padding-bottom: 0;
+}
+
+@mixin rule--xxlarge {
+  font-family: $fontHighlight;
+  font-size: $fontXXLarge;
+  font-weight: 300;
+  line-height: 1.1471em; /* 78px */
+  padding-top: 0.3824em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+@mixin rule--huge {
+  font-family: $fontHighlight;
+  font-size: $fontHuge;
+  font-weight: 300;
+  line-height: 1.19em; /* 130px */
+  padding-top: 0.2364em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+@mixin type--small() {
+  @include rule--small;
+}
+
+@mixin type--base() {
+  @include rule--base;
+}
+
+@mixin type--medium($applyMobileFirst: true) {
+	@if applyMobileFirst == true {
+        @include type--base();
+
+        @include medium {
+          @include rule--medium;
+        }
+	} @else {
+		@include rule--medium;
+	}
+}
+
+@mixin type--large($applyMobileFirst: true) {
+    @if applyMobileFirst == true {
+        @include type--medium(false);
+        @include medium {
+            @include rule--large;
+        }
+    }
+    @else {
+        @include rule--large;
+    }
+}
+
+@mixin type--xlarge($applyMobileFirst: true) {
+    @if applyMobileFirst == true {
+        @include type--large(false);
+        @include medium {
+          @include rule--xlarge;
+        }
+    }
+    @else {
+        @include rule--xlarge;
+    }
+}
+
+@mixin type--xxlarge($applyMobileFirst: true) {
+    @if applyMobileFirst == true {
+        @include type--xlarge(false);
+        @include medium {
+            @include rule--xxlarge;
+        }
+    }
+    @else {
+        @include rule--xxlarge;
+    }
+}
+
+@mixin type--huge($applyMobileFirst: true) {
+    @if applyMobileFirst == true {
+        @include type--xxlarge(false);
+        @include medium {
+          @include rule--huge;
+        }
+    }
+    @else {
+        @include rule--huge;
+    }
+}
+
+
+@mixin small {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin wide {
+    @media (min-width: 1050px) {
+        @content;
+    }
+}
